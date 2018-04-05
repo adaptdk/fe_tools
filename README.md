@@ -22,10 +22,10 @@ Include the adapt-mixins mixin file in your main.scss file
 Assuming you're using a compiler like babel, you can impor the main.js like the following
 ```js
 // ES6
-import * as ft from '@adaptagency/fe_tools/main.js';
+import ft from '@adaptagency/fe_tools/main';
 
 // ES5 >=
-const ft = require('@adaptagency/fe_tools/main.js');
+var ft = require('@adaptagency/fe_tools/main');
 ```
 
 #### What's included
