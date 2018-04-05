@@ -3,7 +3,7 @@
 ## Setup 
 * Add node module to your package.json
 ```console
-yarn add -D adapt-mixins
+yarn add -D @adaptagency/fe_tools
 ```
 
 ### SCSS
