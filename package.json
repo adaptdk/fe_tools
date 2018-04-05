@@ -1,42 +1,36 @@
 {
-  "name": "adapt-mixins",
-  "version": "2.0.8",
+  "name": "fe_tools",
+  "version": "1.0.0",
   "description": "Adapt Frontend Development Tools",
   "author": "Adapt",
   "main": "src/mixins/mixins.scss",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "node-sass": "*"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adaptdk/adapt-mixins.git"
-  },
   "keywords": [
     "Sass",
+    "Javascript",
+    "Utilities",
     "Mixins",
     "Scss",
-    "Lib",
     "Adapt",
+    "Adapt Agency",
     "Adapt DK",
     "Frontend",
-    "Mixins",
-    "Styling",
-    "Coller",
-    "CollerShift",
-    "Col",
-    "DynCol",
+    "Sass Functions",
     "Inner",
-    "Media",
-    "Clearfix",
     "Multiplier"
   ],
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/adaptdk/adapt-mixins/issues"
+ "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaptdk/fe_tools.git"
   },
-  "homepage": "https://github.com/adaptdk/adapt-mixins#readme"
+   "bugs": {
+    "url": "https://github.com/adaptdk/fe_tools/issues"
+  }
 }

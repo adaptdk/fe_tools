@@ -1,38 +1,35 @@
-# Setup
-#### Add npm module to your package.json
+# Frontend Tools - Adapt Agency
+
+### Setup 
+* Add node module to your package.json
 ```
-npm install adapt-mixins --save-dev
-```
-#### Include "@import" of the adapt-mixins mixin file in your main.scss file
-```
-@import "~adapt-mixins/src/mixins/mixins.scss";
+yarn add -D adapt-mixins
 ```
 
-Compile :)
+#### SCSS
+Include the adapt-mixins mixin file in your main.scss file
+```
+@import "~fe_tools/main.scss";
+```
 
+##### What's included
+- **Mixins**
+- - Multiplier
+- - Visually Hidden (Accessibility)
+- - Inner (Max Width)
 
-# Mixin list
-WIKI - https://github.com/adaptdk/adapt-mixins/wiki/Mixin-Overview
+#### Javascript
+Assuming you're using a compiler like babel, you can impor the main.js like the following
+```
+// ES6
+import * as ft from 'fe_tools/main.js';
 
-### Included in Adapt Mixin
-- Clearfix
-- Inner
-- Media
-- Tablefix
-- **Coller family**
-  - col
-  - coller
-  - collerShift
-  - collerAdvanced
-  - collerFloat
-- **DynCol family**
-  - dynCol
-  - dynColFloat
+// ES5 >=
+const ft = require('fe_tools/main.js');
+```
 
-### Version meaning.
-**X.Y.Z** (eg. v1.3.2)
-
-- **X** New changes that breaks backwards compatibility
-- **Y** New feature added
-- **Z** Bug fixes
-
+##### What's included
+- **Mixins**
+- - Multiplier
+- - Visually Hidden (Accessibility)
+- - Inner (Max Width)

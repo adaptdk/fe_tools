@@ -1,8 +1,3 @@
-@import "src/mixins/gridSystems/coller";
-@import "src/mixins/gridSystems/collerShift";
-@import "src/mixins/gridSystems/dynCol";
-@import "src/mixins/clearfix";
-@import "src/mixins/inner/inner";
-@import "src/mixins/media";
-@import "src/mixins/tablefix";
-@import "src/mixins/multiplier";
+@import "src/scss/mixins/layout/inner";
+@import "src/scss/mixins/accessibility";
+@import "src/scss/mixins/multiplier";
