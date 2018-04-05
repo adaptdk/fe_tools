@@ -1,6 +1,5 @@
 # Frontend Tools - Adapt Agency
-
-[![NPM](https://nodei.co/npm/@adaptagency/fe_tools.png?compact=true)](https://www.npmjs.com/package/@adaptagency/fe_tools)
+[![npm version](https://badge.fury.io/js/%40adaptagency%2Ffe_tools.svg)](https://badge.fury.io/js/%40adaptagency%2Ffe_tools)
 
 ## Setup 
 * Add node module to your package.json
