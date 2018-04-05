@@ -1,5 +1,5 @@
 {
-  "name": "fe_tools",
+  "name": "@adaptagency/fe_tools",
   "version": "1.0.0",
   "description": "Adapt Frontend Development Tools",
   "author": "Adapt",
@@ -26,11 +26,12 @@
     "Inner",
     "Multiplier"
   ],
- "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/adaptdk/fe_tools.git"
   },
-   "bugs": {
+  "bugs": {
     "url": "https://github.com/adaptdk/fe_tools/issues"
-  }
+  },
+  "homepage": "https://github.com/adaptdk/fe_tools#readme"
 }

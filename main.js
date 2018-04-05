@@ -1,7 +1,9 @@
-import * as common from './src/js/common.js';
+// Collection of all the JS Functions
+var ftCollection = {
+  isBrowser: function () {
+    return typeof window !== 'undefined';
+  }
+};
 
-const functions = {
-  ...common,
-}
-
-export default functions;
+// Exporting them so they'll be available for the other node modules
+module.exports = ftCollection;
