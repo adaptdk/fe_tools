@@ -1,5 +1,7 @@
 # Frontend Tools - Adapt Agency
 
+[![NPM](https://nodei.co/npm/@adaptagency/fe_tools.png?compact=true)](https://www.npmjs.com/package/@adaptagency/fe_tools)
+
 ## Setup 
 * Add node module to your package.json
 ```console
