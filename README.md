@@ -1,26 +1,26 @@
 # Frontend Tools - Adapt Agency
 
-### Setup 
+## Setup 
 * Add node module to your package.json
-```
+```console
 yarn add -D adapt-mixins
 ```
 
-#### SCSS
+### SCSS
 Include the adapt-mixins mixin file in your main.scss file
-```
+```scss
 @import "~fe_tools/main.scss";
 ```
 
-##### What's included
-- **Mixins**
-- - Multiplier
-- - Visually Hidden (Accessibility)
-- - Inner (Max Width)
+#### What's included
+##### Mixins
+- Multiplier
+- Visually Hidden (Accessibility)
+- Inner (Max Width)
 
-#### Javascript
+### Javascript
 Assuming you're using a compiler like babel, you can impor the main.js like the following
-```
+```js
 // ES6
 import * as ft from 'fe_tools/main.js';
 
@@ -28,8 +28,6 @@ import * as ft from 'fe_tools/main.js';
 const ft = require('fe_tools/main.js');
 ```
 
-##### What's included
-- **Mixins**
-- - Multiplier
-- - Visually Hidden (Accessibility)
-- - Inner (Max Width)
+#### What's included
+##### Mixins
+- Is Browser
