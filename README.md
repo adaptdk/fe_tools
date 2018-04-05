@@ -17,6 +17,9 @@ Include the adapt-mixins mixin file in your main.scss file
 - Multiplier
 - Visually Hidden (Accessibility)
 - Inner (Max Width)
+##### Functions
+- string split
+- sum
 
 ### Javascript
 Assuming you're using a compiler like babel, you can impor the main.js like the following
@@ -29,5 +32,5 @@ var ft = require('@adaptagency/fe_tools/main');
 ```
 
 #### What's included
-##### Mixins
+##### Utilities
 - Is Browser
