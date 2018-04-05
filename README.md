@@ -9,7 +9,7 @@ yarn add -D adapt-mixins
 ### SCSS
 Include the adapt-mixins mixin file in your main.scss file
 ```scss
-@import "~fe_tools/main.scss";
+@import "~@adaptagency/fe_tools/main";
 ```
 
 #### What's included
@@ -22,10 +22,10 @@ Include the adapt-mixins mixin file in your main.scss file
 Assuming you're using a compiler like babel, you can impor the main.js like the following
 ```js
 // ES6
-import * as ft from 'fe_tools/main.js';
+import * as ft from '@adaptagency/fe_tools/main.js';
 
 // ES5 >=
-const ft = require('fe_tools/main.js');
+const ft = require('@adaptagency/fe_tools/main.js');
 ```
 
 #### What's included
