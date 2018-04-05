@@ -1,0 +1,19 @@
+$bps: (410px, 700px, 1200px, 1440px, 1900px, 2100px);
+
+@mixin rt($headerSize, $index) {
+  @if length($headerSize) == 1 {
+    $breakpoint: nth($bps, $index);
+    @media (min-width: $breakpoint) {
+      font-size: $headerSize;
+    }
+  }
+
+  @if length($headerSize) == 2 {
+    $hs: nth($headerSize, 1);
+    $breakpoint: nth($headerSize, 2);
+
+    @media (min-width: $breakpoint) {
+      font-size: $hs;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@adaptagency/fe_tools",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Adapt Frontend Development Tools",
   "author": "Adapt",
   "main": "src/mixins/mixins.scss",
@@ -24,6 +24,7 @@
     "Frontend",
     "Sass Functions",
     "Inner",
+    "Responsive Typography",
     "Multiplier"
   ],
   "repository": {
