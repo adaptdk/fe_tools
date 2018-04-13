@@ -4,7 +4,7 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 ## Params
 ```js
 /**
- * @mixin inner Params
+ * mixin: inner Params
  * @param {string} $padding - The padding in pixels - 20px
  * @param {number} [$maxWidth] - The max-width property in pixels - 900px
  * @param {number} [$breakpoint] - When the (min-width: breakpoint) should apply, in pixels - 1024px
