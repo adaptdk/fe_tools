@@ -1,4 +1,5 @@
-# Reponsive Typography
+# Inner (Max-Width)
+A mixin for centering, and setting max-width and padding dynamically, changable by breakpoints. 
 
 ## Params
 ```js
