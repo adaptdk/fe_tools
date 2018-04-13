@@ -2,23 +2,7 @@
 @import "rt";
 
 @mixin responsive-typography($typo) {
-
-  //
-  // Example Usage:
-  // $headerSizes: (
-  //   h1: (2.8rem, 3rem),
-  //   h2: (2.2rem, (2.4rem 900px)),
-  //   h3: (1.9rem, 2.1rem),
-  //   h4: (1.6rem, 1.8rem, (2.1rem 1200px),
-  //   h5: (1.3rem, 1.6rem),
-  //   h6: (1.1rem, 1.2rem),
-  // );
-  //
-  //  @include responsive-typography($headerSizes) {
-  //
-
   @each $i in $typo {
-
     $headerTitle: nth($i, 1);
     $headerSizes: nth($i, 2);
     $headerIndex: str_split($headerTitle, 'h');
