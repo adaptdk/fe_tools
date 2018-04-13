@@ -1,7 +1,7 @@
 @import "../../functions/str_split";
-@import "rt";
+@import "respTypoBp";
 
-@mixin responsive-typography($typo) {
+@mixin respTypo($typo) {
   @each $i in $typo {
     $headerTitle: nth($i, 1);
     $headerSizes: nth($i, 2);
@@ -16,7 +16,7 @@
         }
 
         @if $headerIndex >= 2 {
-          @include rt($headerSize, $headerIndex);
+          @include respTypoBp($headerSize, $headerIndex);
         }
       }
     }

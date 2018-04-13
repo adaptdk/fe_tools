@@ -1,28 +1,28 @@
-# Reponsive Typography
+# RespTypo (Responsive Typography)
 Place the mixin in the root of the scss file, out of a selector in your base typography scss file
 
 ## Params
 ```js
 /**
- * mixin: responsiveTypography Params
+ * mixin: respTypo Params
  * @param {object} $typoSize - A SCSS map of the sizes
  */
- 
+
 /**
  * variable: $typoSize Params
  * @param {string} $selector - The Selector
  * @param {number} $fontSize - The fontsize in pixels for that breakpoint.
  * @param {number} [$breakpoint] - When the (min-width: breakpoint) should apply, in pixels - 1024px
  */
- 
+
 @params (
   $typoSize: (
-    $selector: 
+    $selector:
       $fontSize, // The first does not accept breakpoint, because it's not wrapped in a media query
-      
+
       $fontSize, // Recursive
       // If a custom breakpoint is not entered, take the default breakpoint.
-      
+
       ($fontSize, $breakpoint) // Recursive
       // If a custom breakpoint is entered, then your need to wrap $fontSize and $breakpoint in parenthesis ()
   )
@@ -57,14 +57,14 @@ $typoSize: (
   h6: (1.1rem, 1.2rem, 1.5rem), // Added third property using default breakpoint param
 );
 
-@include responsiveTypography($typoSize);
+@include respTypo($typoSize);
 ```
 
 #### Output (CSS)
 ```scss
 h1 {
   font-size: 2.8rem;
-  
+
   @media (min-width: 410px) {
     font-size: 3rem;
   }
@@ -72,11 +72,11 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
-  
+
   @media (min-width: 410px) {
     font-size: 2.4rem;
   }
-  
+
   @media (min-width: 900px) {
     font-size: 2.6rem;
   }

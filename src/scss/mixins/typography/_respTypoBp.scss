@@ -1,8 +1,8 @@
-$bps: (410px, 700px, 1200px, 1440px, 1900px, 2100px);
+$breakpoint: (410px, 700px, 1200px);
 
-@mixin rt($headerSize, $index) {
+@mixin respTypoBp($headerSize, $index) {
   @if length($headerSize) == 1 {
-    $breakpoint: nth($bps, $index);
+    $breakpoint: nth($breakpoint, $index);
     @media (min-width: $breakpoint) {
       font-size: $headerSize;
     }
