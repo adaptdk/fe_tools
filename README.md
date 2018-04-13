@@ -16,7 +16,7 @@ Include the adapt-mixins mixin file in your main.scss file
 #### What's included
 ##### Mixins
 - Multiplier
-- Reponsive Typography
+- RespTypo (Reponsive Typography)
 - Visually Hidden (Accessibility)
 - Inner (Max Width)
 ##### Functions
