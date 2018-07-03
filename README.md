@@ -16,6 +16,7 @@ Include the adapt-mixins mixin file in your main.scss file
 #### What's included
 ##### Mixins
 - Multiplier
+- Full width (Force element to be full width when restricted by a container max-width)
 - RespTypo (Reponsive Typography)
 - Visually Hidden (Accessibility)
 - Inner (Max Width)

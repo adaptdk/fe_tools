@@ -1,0 +1,16 @@
+// Mixin to force an element restricted by its container, to be full width.
+// See demo: https://codepen.io/christofferbergj/pen/vrYZMV
+
+@mixin full-width($padding: null) {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+
+	@if $padding {
+		padding-left: $padding;
+		padding-right: $padding;
+	}
+}
