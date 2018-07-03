@@ -63,7 +63,7 @@
       @if $size != null {
         @if length($size) == 2 {
           $sizeWidth: nth($size, 1);
-          $sizeHeight: nth($size, 1);
+          $sizeHeight: nth($size, 2);
           width: $sizeWidth;
           height: $sizeHeight;
         } @else {
