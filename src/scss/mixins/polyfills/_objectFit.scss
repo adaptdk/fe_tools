@@ -1,0 +1,76 @@
+////
+/// Polyfill for Object Fit - Use to create object fit which only works in IE
+/// @param {array[string]} $fit [cover center]   Array of strings controlling object-fit/pos prop.
+/// @param {array[number]} $size                 Array of numbers controlling the width / height.
+/// @param {string} $crop                        Controls whether the image should be cropped in height or width.
+////
+@mixin objectFit($fit: cover center, $size: null, $crop: width) {
+  // For IE
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  // Add the size
+  @if $size != null {
+    @if length($size) == 2 {
+      $sizeWidth: nth($size, 1);
+      $sizeHeight: nth($size, 1);
+      width: $sizeWidth;
+      height: $sizeHeight;
+    } @else {
+      width: $size;
+      height: $size;
+    }
+  }
+
+  > * {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    // The Direction
+    @if $crop == height {
+      width: 100%;
+      height: auto;
+    } @else if $crop == width {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  //If we support Object Fit
+  @supports (object-fit: cover) {
+    width: auto;
+    height: auto;
+
+    > * {
+      position: static;
+      width: auto;
+      height: auto;
+      transform: none;
+
+      @if length($fit) == 2 {
+        $objectFit: nth($fit, 1);
+        $objectPos: nth($fit, 2);
+        object-fit: $objectFit;
+        object-position: $objectPos;
+      } @else {
+        object-fit: $fit;
+        object-position: center;
+      }
+
+      @if $size != null {
+        @if length($size) == 2 {
+          $sizeWidth: nth($size, 1);
+          $sizeHeight: nth($size, 1);
+          width: $sizeWidth;
+          height: $sizeHeight;
+        } @else {
+          width: $size;
+          height: $size;
+        }
+      }
+    }
+  }
+}

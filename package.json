@@ -6,12 +6,15 @@
   "main": "src/mixins/mixins.scss",
   "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it"
   },
   "dependencies": {
     "node-sass": "*"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "release-it": "^7.4.7"
+  },
   "keywords": [
     "Sass",
     "Javascript",
@@ -25,7 +28,9 @@
     "Sass Functions",
     "Inner",
     "Responsive Typography",
-    "Multiplier"
+    "Multiplier",
+    "Polyfills",
+    "Object Fit"
   ],
   "repository": {
     "type": "git",
