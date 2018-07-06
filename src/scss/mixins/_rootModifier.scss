@@ -1,0 +1,13 @@
+@import "../functions/str-remove-whitespace";
+@import "../functions/str-split";
+
+@mixin rootModifier($stringToAppend: null) {
+  $splitString: str_split('#{&}', '.');
+  $rootSelector: ".#{nth($splitString, 2)}";
+  $rootSelectorAppended: str-remove-whitespace(#{$rootSelector}#{$stringToAppend});
+  $postSelector: str-replace(#{&}, #{$rootSelector});
+
+  @at-root #{$rootSelectorAppended $postSelector} {
+    @content;
+  }
+}
