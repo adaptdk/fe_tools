@@ -25,7 +25,10 @@
     "Sass Functions",
     "Inner",
     "Responsive Typography",
-    "Multiplier"
+    "Multiplier",
+    "SASS Functions",
+    "Multiplier",
+    "Root Modifier"
   ],
   "repository": {
     "type": "git",
