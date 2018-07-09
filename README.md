@@ -14,7 +14,11 @@ yarn add -D @adaptagency/fe_tools
 ### SCSS
 Include the adapt-mixins mixin file in your main.scss file
 ```scss
-@import "~@adaptagency/fe_tools/main"; // <-- This requires tilde importer
+// With tilde importer
+@import "~@adaptagency/fe_tools/main";
+
+// Regular
+@import "node_modules/@adaptagency/fe_tools/main";
 ```
 
 ### Javascript
