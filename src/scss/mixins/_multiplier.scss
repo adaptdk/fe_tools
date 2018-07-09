@@ -2,7 +2,7 @@
 //
 // Mulitplies the selector to make it stronger. Useful instead of !important
 @mixin multiplier($multiplierQuantity: 1) {
-  $splitString: str_split('#{&}', '.');
+  $splitString: str-split('#{&}', '.');
   $lastIndex: length($splitString);
   $lastSelector: ".#{nth($splitString, $lastIndex)}";
   $selector: &;

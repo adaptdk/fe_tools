@@ -5,7 +5,7 @@
   @each $i in $typo {
     $headerTitle: nth($i, 1);
     $headerSizes: nth($i, 2);
-    $headerIndex: str_split($headerTitle, 'h');
+    $headerIndex: str-split($headerTitle, 'h');
 
     #{$headerTitle} {
       @for $headerIndex from 1 through length($headerSizes) {

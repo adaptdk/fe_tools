@@ -1,4 +1,4 @@
-@function str_split($string, $separator) {
+@function str-split($string, $separator) {
   // empty array/list
   $split-arr: ();
   // first index of separator in string
