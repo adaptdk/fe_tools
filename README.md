@@ -1,6 +1,10 @@
 # Frontend Tools - Adapt Agency
 [![npm version](https://badge.fury.io/js/%40adaptagency%2Ffe_tools.svg)](https://badge.fury.io/js/%40adaptagency%2Ffe_tools)
 
+## What is it?
+fe_tools is a utility collection made to make development more easy and effecient.
+It include some common mixins, sass functions and js functions which easily is used on every project.
+
 ## Setup 
 * Add node module to your package.json
 ```console
@@ -13,17 +17,6 @@ Include the adapt-mixins mixin file in your main.scss file
 @import "~@adaptagency/fe_tools/main";
 ```
 
-#### What's included
-##### Mixins
-- Multiplier
-- Full width (Force element to be full width when restricted by a container max-width)
-- RespTypo (Reponsive Typography)
-- Visually Hidden (Accessibility)
-- Inner (Max Width)
-##### Functions
-- string split
-- sum
-
 ### Javascript
 Assuming you're using a compiler like babel, you can impor the main.js like the following
 ```js
@@ -34,13 +27,14 @@ import ft from '@adaptagency/fe_tools/main';
 var ft = require('@adaptagency/fe_tools/main');
 ```
 
-#### What's included
-##### Utilities
-- Is Browser
-
-
 ## Documentation
+### Overview
+**SCSS**
+- [https://github.com/adaptdk/fe_tools#inner-max-width](Inner)
+- [https://github.com/adaptdk/fe_tools#rootmodifier](rootModifier)
 ### SCSS
+
+---
 
 #### Inner (Max-Width)
 A mixin for centering, and setting max-width and padding dynamically, changable by breakpoints. 
@@ -48,7 +42,7 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 ##### Params
 ```js
 /**
- * mixin: inner Params
+ * A mixin for centering, and setting max-width and padding dynamically, changable by breakpoints. 
  * @param {string} $padding - The padding in pixels - 20px
  * @param {number} [$maxWidth] - The max-width property in pixels - 900px
  * @param {number} [$breakpoint] - When the (min-width: breakpoint) should apply, in pixels - 1024px
@@ -108,7 +102,11 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 }
 ```
 
+---
+
 #### rootModifier
+A mixin for appending a string to the first selector. Useful if you're using BEM modifier on root level of your selector.
+
 ##### Params
 ```js
 /**
