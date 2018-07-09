@@ -1,5 +1,11 @@
+// Layout
 @import "src/scss/mixins/layout/inner";
 @import "src/scss/mixins/layout/full-width";
+
+// Typography
 @import "src/scss/mixins/typography/respTypo";
+
+// General
 @import "src/scss/mixins/accessibility";
 @import "src/scss/mixins/multiplier";
+@import "src/scss/mixins/rootModifier";
