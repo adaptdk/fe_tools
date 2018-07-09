@@ -112,7 +112,7 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 ##### Params
 ```js
 /**
- * A mixin for appending a string to the first selector.
+ * A mixin for appending a string to the first selector. Useful if you're using BEM modifier on root level of your selector.
  * @param {string} $stringToAppend - The string which will be added to the first selector in the selector.
  */
  
@@ -141,7 +141,7 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 }
 ```
 
-###### Example 1
+###### Example 2
 **Input (SCSS)**
 ```scss
 .lol {
@@ -158,6 +158,30 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 **Output (CSS)**
 ```scss
 .lol .loldemort {
+  ...styling
+}
+```
+
+###### Example 3
+**Input (SCSS)**
+```scss
+.block {
+  // The extra "&" is important, because we need the first selector to exist isolated.
+  & &__element {
+    .block {
+      &__element {
+        @include rootModifier('--myModifier') {
+          ...styling
+        }
+      }
+    }
+  }
+}
+```
+
+**Output (CSS)**
+```scss
+.block--myModifier .block__element .block__element { 
   ...styling
 }
 ```
