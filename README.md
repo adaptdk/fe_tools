@@ -36,10 +36,10 @@ var ft = require('@adaptagency/fe_tools/main');
 
 ---
 
-#### Inner (Max-Width)
+### Inner (Max-Width)
 A mixin for centering, and setting max-width and padding dynamically, changable by breakpoints. 
 
-##### Params
+#### Params
 ```js
 /**
  * A mixin for centering, and setting max-width and padding dynamically, changable by breakpoints. 
@@ -54,8 +54,8 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 )
 ```
 
-##### Examples
-###### Example 1
+#### Examples
+##### Example 1
 **Input (SCSS)**
 ```scss
 .h1 {
@@ -74,7 +74,7 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 }
 ```
 
-###### Example 2
+##### Example 2
 **Input (SCSS)**
 ```scss
 .h1 {
@@ -104,10 +104,10 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 
 ---
 
-#### rootModifier
+### rootModifier
 A mixin for appending a string to the first selector. Useful if you're using BEM modifier on root level of your selector.
 
-##### Params
+#### Params
 ```js
 /**
  * A mixin for appending a string to the first selector. Useful if you're using BEM modifier on root level of your selector.
@@ -119,8 +119,8 @@ A mixin for appending a string to the first selector. Useful if you're using BEM
 )
 ```
 
-##### Examples
-###### Example 1
+#### Examples
+##### Example 1
 **Input (SCSS)**
 ```scss
 .lol {
@@ -139,7 +139,7 @@ A mixin for appending a string to the first selector. Useful if you're using BEM
 }
 ```
 
-###### Example 2
+##### Example 2
 **Input (SCSS)**
 ```scss
 .lol {
@@ -160,7 +160,7 @@ A mixin for appending a string to the first selector. Useful if you're using BEM
 }
 ```
 
-###### Example 3
+##### Example 3
 **Input (SCSS)**
 ```scss
 .block {
