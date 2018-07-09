@@ -30,8 +30,8 @@ var ft = require('@adaptagency/fe_tools/main');
 ## Documentation
 ### Overview
 **SCSS**
-- [https://github.com/adaptdk/fe_tools#inner-max-width](Inner)
-- [https://github.com/adaptdk/fe_tools#rootmodifier](rootModifier)
+- [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
+- [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
 ### SCSS
 
 ---
