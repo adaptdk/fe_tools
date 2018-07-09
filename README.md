@@ -32,6 +32,7 @@ var ft = require('@adaptagency/fe_tools/main');
 **SCSS**
 - [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
 - [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
+- [respTypo - Responsive Typography](https://github.com/adaptdk/fe_tools#resptypo-responsive-typography)
 ### SCSS
 
 ---
