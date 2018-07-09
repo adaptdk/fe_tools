@@ -1,5 +1,6 @@
 @import "../functions/str-remove-whitespace";
 @import "../functions/str-split";
+@import "../functions/str-replace";
 
 @mixin rootModifier($stringToAppend: null) {
   $splitString: str-split('#{&}', '.');
