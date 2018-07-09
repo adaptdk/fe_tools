@@ -1,9 +1,9 @@
 // Collection of all the JS Functions
-var ftCollection = {
-  isBrowser: function () {
-    return typeof window !== 'undefined';
-  }
-};
+const onKeyPress = require('./src/js/onKeyPress');
+
+const ftCollection = {
+  onKeyPress,
+}
 
 // Exporting them so they'll be available for the other node modules
 module.exports = ftCollection;
