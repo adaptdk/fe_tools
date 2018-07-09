@@ -105,7 +105,7 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 
 ---
 
-### rootModifier
+### Root Modifier (rootModifier)
 A mixin for appending a string to the first selector. Useful if you're using BEM modifier on root level of your selector.
 
 #### Params
@@ -185,7 +185,7 @@ A mixin for appending a string to the first selector. Useful if you're using BEM
 }
 ```
 
-### RespTypo (Responsive Typography)
+### Responsive Typography (RespTypo)
 Place the mixin in the root of the scss file, out of a selector in your base typography scss file
 
 #### Params
