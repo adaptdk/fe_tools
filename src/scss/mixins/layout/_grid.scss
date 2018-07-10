@@ -1,0 +1,110 @@
+// Utilities
+@import "column";
+
+// Grid mixin to be applied on container level - controls size of children
+@mixin grid($layout: full, $gutter: $base-gutter*0.5) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  @if ($gutter == 0px or $gutter == 0 or $gutter == null or $gutter == no-gutter) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  } @else {
+    margin: 0 -#{$gutter};
+    width: calc(100% + #{$gutter*2});
+  }
+
+  > * {
+    width: 100%;
+    margin-bottom: $base-leading;
+
+    @media (min-width: $medium + 1px) {
+      margin-bottom: $base-leading*1.5;
+    }
+
+    @if ($gutter == 0px or $gutter == 0 or $gutter == null or $gutter == no-gutter) {
+      margin-left: 0;
+      margin-right: 0;
+    } @else {
+      margin-left: $gutter;
+      margin-right: $gutter;
+    }
+  }
+
+  // If there's only one param, add helping text
+  @if (length($layout) < 1) {
+    @warn "Please add a layout selector to the grid";
+  }
+
+  // If there's two params
+  @if (length($layout) == 2) {
+
+    @if (nth($layout, 2) == stretch) {
+      align-items: stretch;
+    }
+
+    @if (nth($layout, 2) == top) {
+      align-items: flex-start;
+    }
+
+    @if (nth($layout, 2) == bottom) {
+      align-items: flex-end;
+    }
+  }
+
+  @if (nth($layout, 1) == full) {
+    > * {
+      width: 100%;
+    }
+  }
+
+  @if (nth($layout, 1) == half) {
+    > * {
+      @include column(1/2, $gutter);
+    }
+  }
+
+  @if (nth($layout, 1) == one-third) {
+    > * {
+      @include column(1/3, $gutter);
+    }
+  }
+
+  @if (nth($layout, 1) == one-fourth) {
+    > * {
+      @include column(1/4, $gutter);
+    }
+  }
+
+  @if (nth($layout, 1) == one-fifth) {
+    > * {
+      @include column(1/5, $gutter);
+    }
+  }
+
+  @if (nth($layout, 1) == one-third-two-thirds) {
+    > * {
+      &:nth-child(2n+1) {
+        @include column(1/3, $gutter);
+      }
+
+      &:nth-child(2n+2) {
+        @include column(2/3, $gutter);
+      }
+    }
+  }
+
+  @if (nth($layout, 1) == two-thirds-one-third) {
+    > * {
+      &:nth-child(2n+1) {
+        @include column(2/3, $gutter);
+      }
+
+      &:nth-child(2n+2) {
+        @include column(1/3, $gutter);
+      }
+    }
+  }
+}
