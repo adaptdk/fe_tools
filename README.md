@@ -39,11 +39,12 @@ Assuming you're using a compiler like babel, you can impor the main.js like the 
 // ES6
 // Importing everything
 import ft from '@adaptagency/fe_tools';
+
 // Importing individual function
 import { onKeyPress } from '@adaptagency/fe_tools';
 
 // ES5 >=
-var ft = require('@adaptagency/fe_tools/main');     // Importing everything
+var ft = require('@adaptagency/fe_tools');     // Importing everything
 ```
 
 ## Documentation
