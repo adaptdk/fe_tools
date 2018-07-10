@@ -1,0 +1,14 @@
+@mixin column($fraction, $gutter: null) {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  @if ($gutter == 0px or $gutter == 0 or $gutter == null or $gutter == no-gutter) {
+    flex-basis: calc(100% * #{$fraction});
+    max-width: calc(100% * #{$fraction});
+    width: calc(100% * #{$fraction});
+  } @else {
+    flex-basis: calc(100% * #{$fraction} - #{$gutter*2});
+    max-width: calc(100% * #{$fraction} - #{$gutter*2});
+    width: calc(100% * #{$fraction} - #{$gutter*2});
+  }
+}
