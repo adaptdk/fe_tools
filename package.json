@@ -13,7 +13,7 @@
     "node-sass": "*"
   },
   "devDependencies": {
-    "release-it": "^7.4.7"
+    "release-it": "^7.5.0-beta.0"
   },
   "keywords": [
     "Sass",
