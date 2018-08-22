@@ -5,6 +5,18 @@
 fe_tools is a utility collection made to make development more easy and effecient.
 It include some common mixins, sass functions and js functions which easily is used on every project.
 
+### Overview
+- **[Setup](https://github.com/adaptdk/fe_tools#setup)**
+- **[Documentation](https://github.com/adaptdk/fe_tools#documentation)**
+  
+  **JS**
+  - [onKeyPress]()
+  
+  **SCSS**
+  - [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
+  - [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
+  - [respTypo - Responsive Typography](https://github.com/adaptdk/fe_tools#resptypo-responsive-typography)
+
 ## Setup
 * Add node module to your package.json
 ```console
@@ -27,23 +39,31 @@ Assuming you're using a compiler like babel, you can impor the main.js like the 
 // ES6
 // Importing everything
 import ft from '@adaptagency/fe_tools';
+
 // Importing individual function
-import { onKeyPress } from '@adaptagency/fe_tools;
+import { onKeyPress } from '@adaptagency/fe_tools';
 
 // ES5 >=
-var ft = require('@adaptagency/fe_tools/main');     // Importing everything
+var ft = require('@adaptagency/fe_tools');     // Importing everything
 ```
 
 ## Documentation
-### Overview
-**SCSS**
-- [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
-- [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
-- [respTypo - Responsive Typography](https://github.com/adaptdk/fe_tools#resptypo-responsive-typography)
-### SCSS
-
+### JS
 ---
+### onKeyPress
+Execute the function if the key is pressed
+```js
+/**
+ * Execute the function if the key is pressed
+ * @param   {number}   key        The key that should be pressed for the function to be executed
+ * @param   {function} func       The function that should be executed
+ * @returns {function}            The exectued function
+ */
+```
 
+
+### SCSS
+---
 ### Inner (Max-Width)
 A mixin for centering, and setting max-width and padding dynamically, changable by breakpoints.
 
