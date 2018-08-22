@@ -16,6 +16,5 @@
   }
   // add the remaining string to list (the last item)
   $split-arr: append($split-arr, $string);
-
   @return $split-arr;
 }
