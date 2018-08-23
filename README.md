@@ -46,7 +46,7 @@ import { onKeyPress } from '@adaptagency/fe_tools';
 var ft = require('@adaptagency/fe_tools');     // Importing everything
 ```
 
-## Documentation
+## 🗂 Documentation
 ### JS
 ---
 ### onKeyPress
@@ -298,7 +298,7 @@ h2 {
 // etc..
 ```
 
-## Development
+## ⛑ Development
 If you're an maintainer of the NPM module you can update fe_tools by running the following script.
 ### If you don't have auth/OTP on your NPM account.
 ```bash
