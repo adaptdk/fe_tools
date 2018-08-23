@@ -30,7 +30,9 @@
     "Multiplier",
     "SASS Functions",
     "Multiplier",
-    "Root Modifier"
+    "Root Modifier",
+    "Debounce",
+    "Throttle"
   ],
   "repository": {
     "type": "git",

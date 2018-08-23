@@ -1,4 +1,3 @@
-
 /**
  * Traverses through the object returning the variable further down the object
  * @param   {object} object     The object you want to traverse through
