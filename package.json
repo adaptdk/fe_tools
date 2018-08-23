@@ -6,7 +6,9 @@
   "main": "main.js",
   "license": "ISC",
   "scripts": {
-    "release": "release-it -n"
+    "release": "release-it -n",
+    "release-minor": "release-it minor -n",
+    "release-major": "release-it major -n"
   },
   "dependencies": {
     "node-sass": "*"
