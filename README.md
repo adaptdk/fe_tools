@@ -1,24 +1,22 @@
 # Frontend Tools - Adapt Agency
 [![npm version](https://badge.fury.io/js/%40adaptagency%2Ffe_tools.svg)](https://badge.fury.io/js/%40adaptagency%2Ffe_tools)
 
-## What is it?
+## 💡 What is it?
 fe_tools is a utility collection made to make development more easy and effecient.
 It include some common mixins, sass functions and js functions which easily is used on every project.
 
-### Overview
-- **[Setup](https://github.com/adaptdk/fe_tools#setup)**
-- **[Documentation](https://github.com/adaptdk/fe_tools#documentation)**
 
-  **JS**
-  - [onKeyPress]()
+## 📖 Overview
 
-  **SCSS**
-  - [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
-  - [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
-  - [respTypo - Responsive Typography](https://github.com/adaptdk/fe_tools#resptypo-responsive-typography)
-- **[Development](https://github.com/adaptdk/fe_tools#development)**
+* [Setup](https://github.com/adaptdk/fe_tools#setup)
+* [Documentation](https://github.com/adaptdk/fe_tools#documentation)
+  * **SCSS**
+    * [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
+    * [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
+    * [respTypo - Responsive Typography](https://github.com/adaptdk/fe_tools#resptypo-responsive-typography)
+* [Development](https://github.com/adaptdk/fe_tools#development)
 
-## Setup
+## 🛠 Setup
 * Add node module to your package.json
 ```console
 yarn add -D @adaptagency/fe_tools
