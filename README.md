@@ -1,41 +1,26 @@
 # Frontend Tools - Adapt Agency
 [![npm version](https://badge.fury.io/js/%40adaptagency%2Ffe_tools.svg)](https://badge.fury.io/js/%40adaptagency%2Ffe_tools)
 
-## What is it?
+## 💡 What is it?
 fe_tools is a utility collection made to make development more easy and effecient.
 It include some common mixins, sass functions and js functions which easily is used on every project.
 
-### Overview
-- **[Setup](https://github.com/adaptdk/fe_tools#setup)**
-- **[Documentation](https://github.com/adaptdk/fe_tools#documentation)**
 
-  **JS**
-  - [onKeyPress]()
+## 📖 Overview
 
-  **SCSS**
-  - [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
-  - [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
-  - [respTypo - Responsive Typography](https://github.com/adaptdk/fe_tools#resptypo-responsive-typography)
+* [Setup](https://github.com/adaptdk/fe_tools#setup)
+* [Documentation](https://github.com/adaptdk/fe_tools#documentation)
+  * **SCSS**
+    * [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
+    * [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
+    * [respTypo - Responsive Typography](https://github.com/adaptdk/fe_tools#resptypo-responsive-typography)
+* [Development](https://github.com/adaptdk/fe_tools#development)
 
-## Setup
+## 🛠 Setup
 * Add node module to your package.json
 ```console
 yarn add -D @adaptagency/fe_tools
 ```
-
-### Updating
-If you're an maintainer of the NPM module you can update fe_tools by running the following script.
-#### If you don't have auth/OTP on your NPM account.
-```bash
-yarn release
-```
-
-#### If you do have auth/OTP on your NPM account.
-```bash
-yarn release --npm.otp=yourAuthKey
-```
-
-Read more about release-it here: https://github.com/webpro/release-it/
 
 ### SCSS
 Include the adapt-mixins mixin file in your main.scss file
@@ -61,7 +46,7 @@ import { onKeyPress } from '@adaptagency/fe_tools';
 var ft = require('@adaptagency/fe_tools');     // Importing everything
 ```
 
-## Documentation
+## 🗂 Documentation
 ### JS
 ---
 ### onKeyPress
@@ -312,3 +297,17 @@ h2 {
 
 // etc..
 ```
+
+## ⛑ Development
+If you're an maintainer of the NPM module you can update fe_tools by running the following script.
+### If you don't have auth/OTP on your NPM account.
+```bash
+yarn release
+```
+
+### If you do have auth/OTP on your NPM account.
+```bash
+yarn release --npm.otp=yourAuthKey
+```
+
+Read more about release-it here: https://github.com/webpro/release-it/
