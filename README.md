@@ -8,10 +8,10 @@ It include some common mixins, sass functions and js functions which easily is u
 ### Overview
 - **[Setup](https://github.com/adaptdk/fe_tools#setup)**
 - **[Documentation](https://github.com/adaptdk/fe_tools#documentation)**
-  
+
   **JS**
   - [onKeyPress]()
-  
+
   **SCSS**
   - [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
   - [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
@@ -22,6 +22,20 @@ It include some common mixins, sass functions and js functions which easily is u
 ```console
 yarn add -D @adaptagency/fe_tools
 ```
+
+### Updating
+If you're an maintainer of the NPM module you can update fe_tools by running the following script.
+#### If you don't have auth/OTP on your NPM account.
+```bash
+yarn release
+```
+
+#### If you do have auth/OTP on your NPM account.
+```bash
+yarn release --npm.otp=yourAuthKey
+```
+
+Read more about release-it here: https://github.com/webpro/release-it/
 
 ### SCSS
 Include the adapt-mixins mixin file in your main.scss file
