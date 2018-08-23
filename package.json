@@ -6,7 +6,7 @@
   "main": "main.js",
   "license": "ISC",
   "scripts": {
-    "release": "release-it -n --npm.otp"
+    "release": "release-it -n"
   },
   "dependencies": {
     "node-sass": "*"
