@@ -39,5 +39,8 @@
   "bugs": {
     "url": "https://github.com/adaptdk/fe_tools/issues"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "homepage": "https://github.com/adaptdk/fe_tools#readme"
 }
