@@ -5,7 +5,7 @@
  * @param   {string} path       The string of the path you want. ex obj.nthObj.nthObj
  * @returns {*}                 Whatever the object is containing
  */
-export const resolvePath = (object, path) => {
+const resolvePath = (object, path) => {
   const newValue = path.split(/\./);
   let current = object;
   while (newValue.length) {
