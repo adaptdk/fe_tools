@@ -10,9 +10,6 @@
     "release-minor": "release-it minor -n",
     "release-major": "release-it major -n"
   },
-  "dependencies": {
-    "node-sass": "*"
-  },
   "devDependencies": {
     "release-it": "^7.5.1"
   },

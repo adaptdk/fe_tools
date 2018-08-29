@@ -1,8 +1,8 @@
 /**
  * A debounce function
- * @param   {function}  func        The function which should be executed
- * @param   {number}    delay       The amount of delay because the function should be executed
- * @param   {boolean}   trailing    Whether the function should be trailing or not
+ * @param   {function}  func          The function which should be executed
+ * @param   {number}    delay         The amount of delay because the function should be executed
+ * @param   {boolean}   [trailing]    Whether the function should be trailing or not
  * @returns {function}
  */
 const debounce = (func, delay, trailing) => {
