@@ -8,13 +8,13 @@ It include some common mixins, sass functions and js functions which easily is u
 
 ## 📖 Overview
 
-* [Setup](https://github.com/adaptdk/fe_tools#setup)
-* [Documentation](https://github.com/adaptdk/fe_tools#documentation)
+* [Setup](https://github.com/adaptdk/fe_tools#-setup)
+* [Documentation](https://github.com/adaptdk/fe_tools#-documentation)
   * **SCSS**
     * [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
     * [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
     * [respTypo - Responsive Typography](https://github.com/adaptdk/fe_tools#resptypo-responsive-typography)
-* [Development](https://github.com/adaptdk/fe_tools#development)
+* [Development](https://github.com/adaptdk/fe_tools#-development)
 
 ## 🛠 Setup
 * Add node module to your package.json
