@@ -314,7 +314,14 @@ h2 {
 If you're an maintainer of the NPM module you can update fe_tools by running the following script.
 ### If you don't have auth/OTP on your NPM account.
 ```bash
+# Patches
 yarn release
+
+# Minor Changes (New Features)
+yarn release-minor
+
+# Major Changes (Complete Rewrite/Compatibility Breaking)
+yarn release-major
 ```
 
 ### If you do have auth/OTP on your NPM account.
