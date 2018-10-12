@@ -131,10 +131,10 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 
 ---
 
-### Root Modifier (rootModifier) *Deprecation*
+### Root Modifier (rootModifier)
 A mixin for appending a string to the first selector. Useful if you're using BEM modifier on root level of your selector.
 
-**rootModifier Will get deprecated in next big release, in advance of assigning & as a variable.'**
+**If you're using BEM then you can just save the & in a variable.***
 ```scss
 .lol {
   $root: &;
