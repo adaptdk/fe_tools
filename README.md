@@ -12,7 +12,7 @@ It include some common mixins, sass functions and js functions which easily is u
 * [Documentation](https://github.com/adaptdk/fe_tools#-documentation)
   * **SCSS**
     * [Inner](https://github.com/adaptdk/fe_tools#inner-max-width)
-    * [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier)
+    * [rootModifier](https://github.com/adaptdk/fe_tools#rootmodifier) *Deprecation*
     * [respTypo - Responsive Typography](https://github.com/adaptdk/fe_tools#resptypo-responsive-typography)
 * [Development](https://github.com/adaptdk/fe_tools#-development)
 
@@ -131,8 +131,20 @@ A mixin for centering, and setting max-width and padding dynamically, changable 
 
 ---
 
-### Root Modifier (rootModifier)
+### Root Modifier (rootModifier) *Deprecation*
 A mixin for appending a string to the first selector. Useful if you're using BEM modifier on root level of your selector.
+
+**rootModifier Will get deprecated in next big release, in advance of assigning & as a variable.'**
+```scss
+.lol {
+  $root: &;
+  .selector {
+    #{&root}--lol & {
+      ...styling
+    }
+  }
+}
+```
 
 #### Params
 ```js
