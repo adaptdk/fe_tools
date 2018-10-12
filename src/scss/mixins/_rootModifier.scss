@@ -11,6 +11,4 @@
   @at-root #{$rootSelectorAppended $postSelector} {
     @content;
   }
-
-  @warn '@mixin rootModifier Will get deprecated in next big release, in advance of assigning \& as a variable.'
 }
