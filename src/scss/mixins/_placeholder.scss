@@ -1,13 +1,13 @@
-/*
- * A mixin to style the placeholder for input fields
- *
- * @usage
- * .yourSelector {
- *   @include placeholder {
- *     ...style..
- *   }
- * }  
- */
+//
+// A mixin to style the placeholder for input fields
+//
+// @usage
+// .yourSelector {
+//   @include placeholder {
+//     ...style..
+//   }
+// }  
+//
 @mixin placeholder {
   &::-webkit-input-placeholder {@content}
   &:-moz-placeholder           {@content}
